@@ -84,18 +84,18 @@ namespace Week2CodeChallenge
 
             var biggestWord = "";
             var shortestWord = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-            //Start for loop to run through the string passed in field exact numbers of information
+            //The for loop it will print the biggest word and the shortest word
             for (int i = 0; i < numCharSplit.Length; i = i + 1) 
             {
-                if (numCharSplit[i].Length > biggestWord.Length) 
-            {
-                biggestWord = numCharSplit[i];
+                if (numCharSplit[i].Length > biggestWord.Length)  //Compares every character in the biggest word 
+                {
+                biggestWord = numCharSplit[i];  
             }
             
             }
             for (int i = 0; i < numCharSplit.Length; i = i + 1)
             {
-                if (numCharSplit[i].Length < shortestWord.Length)
+                if (numCharSplit[i].Length < shortestWord.Length) //Compares every character in the shoretest word 
             {
                     shortestWord = numCharSplit[i];
             }
